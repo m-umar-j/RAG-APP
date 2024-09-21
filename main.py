@@ -1,6 +1,6 @@
-from langchain.embeddings import SentenceTransformerEmbeddings
+from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.llms import Ollama
-from langchain.vectorstores import Pinecone as LangchainPinecone
+from langchain_community.vectorstores import Pinecone as LangchainPinecone
 
 import os
 from dotenv import load_dotenv
