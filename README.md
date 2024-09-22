@@ -25,7 +25,7 @@ https://huggingface.co/spaces/umar-100/QA-bot
 - The following teck stack is used:
   - `langchain`
   - `pinecone` Make sure to sign up and create Pinecone API key 
-  - `Mistral API`
+  - `Mistral API` Make sure to sign up and generate API key
   
 
 ## Setup
