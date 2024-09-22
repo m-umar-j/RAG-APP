@@ -72,4 +72,4 @@ with gr.Blocks() as Iface:
         outputs=[answer_output, matching_results]
     )
 
-Iface.launch()
+Iface.launch(share=True)
