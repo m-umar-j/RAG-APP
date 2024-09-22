@@ -16,15 +16,17 @@ https://huggingface.co/spaces/umar-100/QA-bot
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
 - **Embeddings**: I am using the `SentenceTransformerEmbeddings` to create embeddings for document chunks.
 - **Vector Storage**: Pinecone is used to store document embeddings and efficiently retrieve relevant chunks based on user questions.
-- **LLM Integration**: I tried using LLMs locally using `Ollama`but due to lack of compute resources I used `mistral` for faster and better responses.
+- **LLM Integration**: I tried using LLMs locally using `Ollama` but due to lack of compute resources I wnt with `mistral` for faster and better responses.
 - **Environment Variables**: Secrets like API keys are securely managed using `.env` files.
-
+- **UI/frontend**: Gradio 
+## Deployement
+- It is deployed on huggingface spaces with gradio interface
 ## Requirements
 - Python 3.12
 - Run `pip install -r requirements.txt`
 - The following teck stack is used:
   - `langchain`
-  - `pinecone` Make sure to sign up and create Pinecone API key 
+  - `pinecone` for vector database. Make sure to sign up and create Pinecone API key 
   - `Mistral API` Make sure to sign up and generate API key
   
 
