@@ -1,6 +1,7 @@
-FROM Python:3.12.3-slim
+FROM python:3.12.3-slim
 
-WORKDIR /app
+WORKDIR /RAG-APP
+
 
 COPY requirements.txt .
 

@@ -14,7 +14,7 @@ def load_split_file(file_path):
     pages = loader.load_and_split()
 
     
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=20)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=10)
     docs = text_splitter.split_documents(pages)
 
     return docs
@@ -24,8 +24,9 @@ def create_index(index_name, PINECONE_API_KEY):
       
     pc = Pinecone(api_key=PINECONE_API_KEY)
 
-    if index_name not in pc.list_indexes().names():
-            pc.create_index(
+    if index_name in pc.list_indexes().names():
+        pc.delete_index(index_name) # To avoid any conflicts in retrieval
+    pc.create_index(
                 name=index_name, 
                 dimension=384, 
                 metric='cosine',
@@ -46,13 +47,16 @@ def final_response(index, question, model):
     chain = model | parser 
 
     template = """
-    Answer the question based on the context below. Try to find the answer in the context.
-    If you don't find the answer, reply "I don't know".
+    You must provide an answer based strictly on the context below. 
+    The answer is highly likely to be found within the given context, so analyze it thoroughly before responding. 
+    Only if there is absolutely no relevant information, respond with "I don't know".
+    Do not make things up.
 
     Context: {context}
 
     Question: {question}
     """
+
 
     prompt = PromptTemplate.from_template(template)
     prompt.format(context="Here is some context", question="Here is a question")
@@ -66,6 +70,7 @@ def final_response(index, question, model):
         | model
         | parser
     )
+    matching_results=index.similarity_search(question,k=2)
 
-    return f"Answer: {chain.invoke({'question': question})}"
+    return f"Answer: {chain.invoke({'question': question})}", matching_results
 
