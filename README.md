@@ -5,12 +5,12 @@ sdk: gradio
 sdk_version: 4.44.0
 ---
 # PDF Question-Answering App using LangChain, Pinecone, and Mistral
+![image](https://github.com/user-attachments/assets/8c59f9ae-d1ef-4c35-a1ea-1a1d43815de4)
+This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework for embedding, `Pinecone` for vector storage, and the `mistral` language model for generating responses to user queries.
 ## Demo 
 https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=sharing
 ## Huggingface space link
 https://huggingface.co/spaces/umar-100/QA-bot
-
-This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework for embedding, `Pinecone` for vector storage, and the `mistral` language model for generating responses to user queries.
 
 ## Features
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
