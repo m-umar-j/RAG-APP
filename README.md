@@ -12,6 +12,9 @@ https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=shari
 ## Huggingface space link
 [https://huggingface.co/spaces/umar-100/QA-bot](https://huggingface.co/spaces/umar-100/pdf-QA-bot)
 
+
+## What is RAG?
+![https://youtu.be/T-D1OfcDW1M](What is RAG)
 ## Features
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
 - **Embeddings**: I am using the `SentenceTransformerEmbeddings` to create embeddings for document chunks.
