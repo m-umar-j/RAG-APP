@@ -54,9 +54,9 @@ MISTRAL_API_KEY=your-mistral-api-key
 - run `python app.py` if you want to use Gradio UI
 - run `python main.py` if you want to use without UI
 
-  ## Building with docker
+## Building with docker
 
-  ### 1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/m-umar-j/RAG-APP
 cd RAG-APP
