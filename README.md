@@ -10,7 +10,7 @@ This project is a RAG app designed to perform question-answering (QA) on PDF doc
 ## Demo 
 https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=sharing
 ## Huggingface space link
-[https://huggingface.co/spaces/umar-100/QA-bot](https://huggingface.co/spaces/umar-100/pdf-QA-bot)
+![https://huggingface.co/spaces/umar-100/QA-bot](https://huggingface.co/spaces/umar-100/pdf-QA-bot)
 
 
 ## What is RAG?
