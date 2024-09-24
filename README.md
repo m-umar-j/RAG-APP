@@ -6,7 +6,7 @@ sdk_version: 4.44.0
 ---
 # PDF Question-Answering App using LangChain, Pinecone, and Mistral
 ![image](https://github.com/user-attachments/assets/8c59f9ae-d1ef-4c35-a1ea-1a1d43815de4)
-This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework, `Pinecone` for vector storage, and LLMs from `mistral` for generating responses to user queries.
+This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework, `Pinecone` for vector storage, and  `mistral` for generating responses to user queries.
 ## Demo 
 https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=sharing
 ## Huggingface space link
