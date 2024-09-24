@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=shari
 
 
 ## What is RAG?
-![What is RAG -by IBM research][http://img.youtube.com/vi/T-D1OfcDW1M](https://youtu.be/T-D1OfcDW1M)
+[![What is RAG -by IBM research][http://img.youtube.com/vi/T-D1OfcDW1M]](https://youtu.be/T-D1OfcDW1M)
 ## Features
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
 - **Embeddings**: I am using the `SentenceTransformerEmbeddings` to create embeddings for document chunks.
