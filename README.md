@@ -6,11 +6,11 @@ sdk_version: 4.44.0
 ---
 # PDF Question-Answering App using LangChain, Pinecone, and Mistral
 ![image](https://github.com/user-attachments/assets/8c59f9ae-d1ef-4c35-a1ea-1a1d43815de4)
-This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework for embedding, `Pinecone` for vector storage, and the `mistral` language model for generating responses to user queries.
+This project is a RAG app designed to perform question-answering (QA) on PDF documents. It uses the `LangChain` framework, `Pinecone` for vector storage, and LLMs from `mistral` for generating responses to user queries.
 ## Demo 
 https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=sharing
 ## Huggingface space link
-https://huggingface.co/spaces/umar-100/QA-bot
+[https://huggingface.co/spaces/umar-100/QA-bot](https://huggingface.co/spaces/umar-100/pdf-QA-bot)
 
 ## Features
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
@@ -45,7 +45,35 @@ cd RAG-APP
 
 ``` makefile
 PINECONE_API_KEY=your-pinecone-api-key
+MISTRAL_API_KEY=your-mistral-api-key
 ```
 ### 4. modify paths
 
 `file_path = "/path/to/data.pdf"`
+### 5. run files
+- run `python app.py` if you want to use Gradio UI
+- run `python main.py` if you want to use without UI
+
+  ## Building with docker
+
+  ### 1. Clone the Repository
+```bash
+git clone https://github.com/m-umar-j/RAG-APP
+cd RAG-APP
+```
+### 2. Build docker image 
+
+```bash
+docker build -t your-image-name .
+```
+
+### 3. Verify the image
+
+```bash
+docker images
+```
+
+### 4. Run docker image
+```bash
+docker run -p 8000:8000 your-image-name
+```
