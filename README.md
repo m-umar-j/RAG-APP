@@ -13,8 +13,10 @@ https://drive.google.com/file/d/1oRBGK7Y0gUcGnKUW2GgcqK5bZwNaMR_k/view?usp=shari
 [https://huggingface.co/spaces/umar-100/QA-bot](https://huggingface.co/spaces/umar-100/pdf-QA-bot)
 
 
-## What is RAG? By IBM research
-[![What is RAG by IBM research](https://img.youtube.com/vi/T-D1OfcDW1M/0.jpg)](https://www.youtube.com/watch?v=T-D1OfcDW1M)
+## What is RAG?
+[![What is RAG by IBM research](https://img.youtube.com/vi/T-D1OfcDW1M/0.jpg)](https://www.youtube.com/watch?v=T-D1OfcDW1M)   ![image](https://github.com/user-attachments/assets/3ea6fd86-bf50-4fa5-81d3-31f018f7810a)
+
+
 ## Features
 - **PDF Handling**: Load and split PDF files into manageable chunks for processing.
 - **Embeddings**: I am using the `SentenceTransformerEmbeddings` to create embeddings for document chunks.
